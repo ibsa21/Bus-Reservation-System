@@ -7,7 +7,7 @@
 #include <cmath>
 #include <ctime>
 #include <cctype>
-#include "accountNumber.h"
+#include "PaymentIntegration/accountNumber.h"
 #include "bus_city_info.h"
 
 using namespace std;
@@ -15,8 +15,8 @@ using namespace std;
 struct reserve
 {
     string fullName;
-    unsigned int age;
     string destination, initial_city;
+    unsigned int age;
     int payement;
     int accountNumber;
     int securityNumber;
@@ -24,11 +24,11 @@ struct reserve
     int ticket_size;
     int return_oneWay;
     float travelling_distance;
-    string resrvd_bus;
-    string leaving_time;
     bool is_reserverd;
     bool is_prepaid;
     int dest_no, bus_code;
+    string resrvd_bus;
+    string leaving_time;
 };
 reserve *resrvd_acc[1000];
 
